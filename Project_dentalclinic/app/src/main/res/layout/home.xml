@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
+
+
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        android:text="หน้าหลัก"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#953BFFAA"
+        android:text="บริการ"
+        android:textSize="30sp"
+        android:onClick="service"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ข้อมูลคลีนิค"
+        android:textSize="30sp"
+        android:background="#6BFA9B5B"
+        android:onClick="dataClinic"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="แผนที่คลีนิค"
+        android:textSize="30sp"
+        android:background="#5CFC4EB6"
+        android:onClick="clinicMap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="จองคิว"
+        android:textSize="30sp"
+        android:background="#4300BCD4"
+        android:onClick="booking"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6ECDDA"
+        android:text="สมัครสมาชิก"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อผู้ใช้: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </TableRow>
+
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รหัสผ่าน: "
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อีเมลล์: "
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/table"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="4dp"
+        android:text="ยืนยัน"
+        android:onClick="addEmp"
+        android:background="#BDEB87" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/btnAdd"
+
+        android:background="#F38982"
+        android:text="ย้อนกลับ"
+        android:textSize="20sp"
+        android:onClick="cancel"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

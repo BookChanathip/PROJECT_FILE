@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:text=" แผนที่"
+        android:textColor="#01030A"
+        android:textSize="26sp"
+        android:layout_marginLeft="125dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="390dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="21dp"
+        android:src="@drawable/map" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="-18dp"
+        android:layout_marginTop="130dp"
+        android:text=" เปิดทำการ จันทร์-เสาร์ 9.00 - 20.00 "
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="-44dp"
+        android:text="  คณะทันตแพทยศาสตร์ มหาวิทยาลัยขอนแก่น123 ถ.มิตรภาพ ต.ในเมือง อ.เมือง จ.ขอนแก่น 40002"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="128dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="-184dp"
+        android:layout_marginTop="167dp"
+        android:text=" เบอร์ติดต่อ : 043-2223365"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/table"
+
+        android:layout_marginTop="4dp"
+        android:background="#F38982"
+        android:onClick="home"
+
+        android:text="ย้อนกลับ" />
+
+
+</RelativeLayout>
